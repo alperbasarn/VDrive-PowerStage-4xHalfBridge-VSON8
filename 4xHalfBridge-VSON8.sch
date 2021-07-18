@@ -859,11 +859,9 @@ F 3 "~" H 9800 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9800 5300 9400 5300
-Connection ~ 9800 5300
 Connection ~ 9400 5300
 Wire Wire Line
 	9800 5600 9400 5600
-Connection ~ 9800 5600
 Connection ~ 9400 5600
 Wire Wire Line
 	4360 980  4440 980 
@@ -1162,7 +1160,7 @@ Wire Wire Line
 Connection ~ 920  1490
 Wire Wire Line
 	520  1490 920  1490
-Text Label 500  1590 0    50   ~ 0
+Text Label 520  1490 0    50   ~ 0
 AHG
 Connection ~ 1220 1490
 Wire Wire Line
@@ -1193,9 +1191,9 @@ F 3 "~" H 1070 1490 50  0001 C CNN
 	1    1070 1490
 	0    1    1    0   
 $EndComp
-Text Label 2380 2100 0    50   ~ 0
+Text Label 2350 2100 0    50   ~ 0
 VSENA
-Text Label 2680 2100 0    50   ~ 0
+Text Label 2640 2100 0    50   ~ 0
 A
 Wire Wire Line
 	1930 2100 1930 2000
@@ -1466,18 +1464,6 @@ Wire Wire Line
 	6950 2980 6950 3380
 Wire Wire Line
 	1480 3620 1480 3820
-Wire Wire Line
-	9800 5600 10490 5600
-Wire Wire Line
-	10490 5600 10490 5300
-Wire Wire Line
-	9800 5300 10490 5300
-Connection ~ 10490 5600
-Wire Wire Line
-	10490 5600 10500 5600
-Connection ~ 10490 5300
-Wire Wire Line
-	10490 5300 10500 5300
 $Comp
 L power:GND #PWR0101
 U 1 1 611E888F
@@ -1489,4 +1475,44 @@ F 3 "" H 7250 5900 50  0001 C CNN
 	1    7250 5900
 	1    0    0    -1  
 $EndComp
+Text Label 2280 5830 1    50   ~ 0
+BISENN
+Text Label 2180 6780 3    50   ~ 0
+BISENP
+Text Label 2080 6780 3    50   ~ 0
+VSENB
+Text Label 1980 6780 3    50   ~ 0
+BLG
+Text Label 2080 5830 1    50   ~ 0
+BHG
+Text Label 1980 5830 1    50   ~ 0
+ALG
+Text Label 2280 6780 3    50   ~ 0
+AISENN
+Text Label 2180 5830 1    50   ~ 0
+AHG
+Text Label 2680 5830 1    50   ~ 0
+AISENP
+Text Label 2380 5830 1    50   ~ 0
+VSENA
+Text Label 4580 6780 3    50   ~ 0
+CLG
+Text Label 4680 6780 3    50   ~ 0
+CHG
+Text Label 4380 6780 3    50   ~ 0
+CISENN
+Text Label 4480 6780 3    50   ~ 0
+CISENP
+Text Label 4180 6780 3    50   ~ 0
+VSENC
+Text Label 3980 6780 3    50   ~ 0
+DISENN
+Text Label 4280 6780 3    50   ~ 0
+DISENP
+Text Label 4080 6780 3    50   ~ 0
+VSEND
+Text Label 3880 6780 3    50   ~ 0
+DHG
+Text Label 3780 6780 3    50   ~ 0
+DLG
 $EndSCHEMATC
