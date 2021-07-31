@@ -316,8 +316,6 @@ VSEN_VMOT
 Wire Wire Line
 	9600 3150 9600 3220
 Connection ~ 9600 3220
-Wire Wire Line
-	7350 2520 7350 2530
 Text HLabel 7350 2820 2    50   Input ~ 0
 5V
 $Comp
@@ -345,24 +343,6 @@ F 2 "" H 8700 2000 50  0001 C CNN
 F 3 "" H 8700 2000 50  0001 C CNN
 	1    8700 2000
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7330 2530 7350 2530
-Connection ~ 7350 2530
-Wire Wire Line
-	7350 2530 7350 2820
-$Comp
-L Device:D_Schottky D?
-U 1 1 6167ACF2
-P 7350 2380
-AR Path="/60F72524/6167ACF2" Ref="D?"  Part="1" 
-AR Path="/61662381/6167ACF2" Ref="D2"  Part="1" 
-F 0 "D2" V 7396 2301 50  0000 R CNN
-F 1 "D_Schottky" V 7305 2301 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7350 2380 50  0001 C CNN
-F 3 "~" H 7350 2380 50  0001 C CNN
-	1    7350 2380
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	7330 1220 7330 1590
@@ -403,4 +383,23 @@ Wire Wire Line
 	7350 1890 7350 2000
 Wire Wire Line
 	7350 2000 7350 2230
+$Comp
+L Device:D_Schottky D?
+U 1 1 6167ACF2
+P 7350 2380
+AR Path="/60F72524/6167ACF2" Ref="D?"  Part="1" 
+AR Path="/61662381/6167ACF2" Ref="D2"  Part="1" 
+F 0 "D2" V 7396 2301 50  0000 R CNN
+F 1 "D_Schottky" V 7305 2301 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7350 2380 50  0001 C CNN
+F 3 "~" H 7350 2380 50  0001 C CNN
+	1    7350 2380
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7350 2530 7350 2820
+Text Label 7330 1220 0    50   ~ 0
+5V_IN_RAW
+Text Label 4400 2950 2    50   ~ 0
+5V_IN_RAW
 $EndSCHEMATC
